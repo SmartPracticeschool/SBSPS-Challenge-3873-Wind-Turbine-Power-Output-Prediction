@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<meta charset="UTF-8">
+
+  <title>POWER</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../static/my.css">
+ 
+  
+</head>
+
+<body>
+	<center>
+      <div class="image">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br><font size="5">
+       <h2> Please click the reload button to see the latest graph </h2></font>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary  btn-large" onClick="refreshPage()"><font size="5">Reload to get new plot</font></button>
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+       <img src="{{graph_image}}" width="1800" height="500">
+   <form>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input type="button" class="btn btn-primary  btn-large" value="Wanna check for another date!" onclick="history.go(-1)">
+</form>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+
+ </div>
+</center>
+
+</body>
+</html>

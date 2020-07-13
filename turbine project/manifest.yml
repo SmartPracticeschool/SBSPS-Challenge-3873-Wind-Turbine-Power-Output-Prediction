@@ -1,0 +1,4 @@
+applications:
+ - name: turbineproject
+   random-route: true
+   memory: 1.6G
